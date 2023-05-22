@@ -1,0 +1,32 @@
+Components:
+
+	Containers:
+		ColumnFlexCon,				DONE!
+		RowFlexCon					DONE!
+
+	Inputs:
+		PhoneNumberInput,			DONE!
+		VerifCodeInput,				DONE!
+		TextInput,					DONE!
+		GenderInput,
+		EmailVerifInput,			DONE!
+		PasswordInput				DONE!
+
+	Buttons:
+		GoogleBtn,					DONE!
+		DefaultBtn					DONE!
+
+	Texts:
+		Title,						DONE!
+		SmallLinks					DONE!
+
+
+ToDo:
+	Use React Router Dom
+	Make file system right cuz it's important	DONE!
+	We need an Animation class (static class)	DONE!
+	Make those little changes to register3		DONE!
+	Wrong/True Animation for EmailVerifInput	DONE!
+	Delete green animation on verif inputs		DONE!
+
+https://www.figma.com/file/FhKbMqcMfUgriD6uHzwfwM/exobox-web-site?node-id=208%3A1568&t=wvtQEJYSZtHz532Z-1
