@@ -552,7 +552,6 @@ html {
 
 .shiny_btn_value {
     width: 400.55px;
-    height: 107.17px;
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
@@ -704,6 +703,10 @@ html {
 
 .flex_end {
     justify-content: flex-end;
+}
+
+.flex_start {
+    justify-content: flex-start;
 }
 
 .star {
@@ -910,6 +913,7 @@ html {
 
 .categories {
     padding: 5px 10px;
+    align-items: flex-start;
 }
 
 .left_cat {
@@ -1002,4 +1006,72 @@ html {
     min-height: 400px;
     margin-left: 50px;
     justify-content: flex-start;
+    padding: 25px 15px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.flex_wrap_wrap {
+    flex-wrap: wrap;
+}
+
+.cp {
+    width: 247.5px;
+    height: 447.5px;
+    background: #4B4B4B;
+    border: 1px solid #646464;
+    border-radius: 20px;
+    padding: 25px;
+    justify-content: space-between!important;
+    margin: 25px;
+}
+
+.cp_image {
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    transition: all 0.2s;
+}
+
+.cp_image_container {
+    overflow: hidden;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.cp_image_container:hover .cp_image {
+    transform: scale(1.2);
+}
+
+.cp_header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.color_green {
+    color: green;
+}
+
+.load_more_product {
+    width: 245.32px;
+    height: 49px;
+    background: #C6C6C6;
+    border-radius: 11px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #1B1B1B;
+    cursor: pointer;
+}
+
+.br_20 {
+    border-radius: 20px;
 }
