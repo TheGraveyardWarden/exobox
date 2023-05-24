@@ -2,7 +2,7 @@ import React from "react";
 import RowFlexCon from "../RowFlexCon";
 import ColumnFlexCon from "../ColumnFlexCon";
 
-function MotherBox({name, onClick, className, showMotherBoxPopup, motherBoxStatus, setMotherBoxStatus}) {
+function MotherBox({name, onClick, className, motherBoxStatus, setMotherBoxStatus}) {
 
     const handlePopupClick = (e) => {
         setMotherBoxStatus(e.target.innerHTML);
@@ -22,13 +22,11 @@ function MotherBox({name, onClick, className, showMotherBoxPopup, motherBoxStatu
         {motherBoxStatus !== 'باکس های من' && (
             <div onClick={handleXClick} className="mother_box_x">+</div>
         )}
-        {showMotherBoxPopup && (
-            <ColumnFlexCon className={'mother_box_popup'}>
-                <p onClick={handlePopupClick} className="mother_box_popup_p">برادر</p>
-                <p onClick={handlePopupClick} className="mother_box_popup_p">پدر</p>
-                <p onClick={handlePopupClick} className="mother_box_popup_p">مادر</p>
-            </ColumnFlexCon>
-        )}
+        <ColumnFlexCon className={'mother_box_popup'}>
+            <p onClick={handlePopupClick} className="mother_box_popup_p">برادر</p>
+            <p onClick={handlePopupClick} className="mother_box_popup_p">پدر</p>
+            <p onClick={handlePopupClick} className="mother_box_popup_p">مادر</p>
+        </ColumnFlexCon>
     </RowFlexCon>
 }
 

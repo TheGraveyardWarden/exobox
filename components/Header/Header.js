@@ -13,7 +13,6 @@ import MotherBox from "./MotherBox";
 function Header() {
     const [sTerm, setSTerm] = useState("");
     const [blueBoxCounter, setBlueBoxCounter] = useState(6);
-    const [showMotherBoxPopup, setShowMotherBoxPopup] = useState(false);
     const [motherBoxStatus, setMotherBoxStatus] = useState('باکس های من');
 
     const onSearch = () => {
@@ -26,18 +25,11 @@ function Header() {
         })
     }
 
-    const onMotherBoxClick = (e) => {
-        if(e.target.classList.contains('mother_box_x')) return;
-        setShowMotherBoxPopup(prevState => {
-            return !prevState;
-        })
-    }
-
     return <RowFlexCon className={"header_con"}>
         <Link to='/login'><AccountBtn/></Link>
         <RowFlexCon className={'header_right'}>
             <BlueBox onClick={onBlueBoxClick} counter={blueBoxCounter} setCounter={setBlueBoxCounter} />
-            <MotherBox onClick={onMotherBoxClick} motherBoxStatus={motherBoxStatus} setMotherBoxStatus={setMotherBoxStatus} showMotherBoxPopup={showMotherBoxPopup} />
+            <MotherBox motherBoxStatus={motherBoxStatus} setMotherBoxStatus={setMotherBoxStatus} />
             <RedBox/>
             <SearchBox onSearch={onSearch} sTerm={sTerm} setSTerm={setSTerm} />
             <HeaderLink to="/">صفحه اصلی</HeaderLink>
